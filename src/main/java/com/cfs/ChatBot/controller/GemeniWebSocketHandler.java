@@ -17,7 +17,7 @@ import org.springframework.http.HttpHeaders;
 @Component
 public class GemeniWebSocketHandler extends TextWebSocketHandler {
 
-     @Value("${gemini.api.key}")
+     @Value("${GEMINI_API_KEY}")
      private String apikey;
 
      private final String GEMINI_URL="https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=";
